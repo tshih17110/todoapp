@@ -34,8 +34,14 @@ export class TodoService {
     return this.http.post<Task>(this.apiUrl + '/create', task);
   }
 
+  // Update existing task by id
   updateTask(id: number, task: Task): Observable<Task> {
     return this.http.put<Task>(this.apiUrl + '/' + id, task);
+  }
+
+  // Delete task by id
+  deleteTask(id: number): Observable<Task> {
+    return this.http.delete<Task>(this.apiUrl + '/' + id);
   }
 
 }
