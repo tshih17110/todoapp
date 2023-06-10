@@ -48,4 +48,10 @@ public class TaskController {
         taskService.deleteById(id);
         return ResponseEntity.ok(true);
     }
+
+    @DeleteMapping("/deleteall")
+    public ResponseEntity<String> deleteAllTasks() {
+        taskService.deleteAll();
+        return ResponseEntity.ok("All tasks have been deleted");
+    }
 }

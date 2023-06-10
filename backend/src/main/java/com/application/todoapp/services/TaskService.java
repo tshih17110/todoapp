@@ -41,5 +41,9 @@ public class TaskService {
     public Task editTask(Task task) {
         return taskRepository.save(task);
     }
+
+    public void deleteAll() {
+        taskRepository.deleteAll();
+    }
     
 }

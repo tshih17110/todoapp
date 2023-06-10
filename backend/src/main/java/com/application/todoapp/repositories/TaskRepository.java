@@ -13,4 +13,5 @@ public interface TaskRepository extends JpaRepository<Task, Long> {
     public List<Task> findByTaskProgress(Progress taskProgress);
     public List<Task> findAll();
     public Task getById(Long id);
+    void deleteAll();
 }
