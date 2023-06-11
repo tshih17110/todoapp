@@ -1,0 +1,41 @@
+.task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between; 
+    width: 70%;
+    margin: 0 auto;
+}
+
+.tasklist {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+  
+.create-task-section {
+    margin-top: 1%;
+    width: 70%; 
+}
+
+.create-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    
+    .task-description {
+        flex: 1;
+        margin-right: 10px;
+        box-sizing: border-box;
+        input {
+            width: calc(1ch * 50);
+        }
+    }
+    .create-task-progress {
+        margin-left: auto;
+    }
+    .submit-button {
+        margin-left: 10px;
+    }
+}

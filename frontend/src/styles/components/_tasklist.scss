@@ -1,0 +1,45 @@
+.task-container {
+    height: 300px;
+    overflow-y: auto;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.task {
+    font-family: $montserrat;
+    color: $dark-shade;
+    list-style: none;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-name {
+    margin: 0;
+}
+
+.progress {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: black;
+}
+  
+.incomplete-color {
+  background-color: $incomplete-color;
+}
+
+.ongoing-color {
+  background-color: $ongoing-color;
+}
+
+.complete-color {
+  background-color: $complete-color;
+}
+  
+

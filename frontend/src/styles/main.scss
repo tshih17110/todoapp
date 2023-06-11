@@ -1,8 +1,14 @@
 
 //base
 @import 'base/typography';
+@import 'base/colors';
+@import 'base/base';
 
 //components
 @import 'components/sort-button';
+@import 'components/tasklist';
+@import 'components/create-task';
 
 //layout
+@import 'layout/create-task';
+@import 'layout/task-section';

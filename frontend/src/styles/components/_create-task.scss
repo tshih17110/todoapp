@@ -1,0 +1,62 @@
+.create-task-section {
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.task-description input {
+    font-size: 12px;
+    padding: 6px 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    &:focus {
+        outline: none;
+    }
+}
+
+.create-task-progress {
+    input {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+        height: calc(100%);
+        width: 1px;
+        border: 0;
+        overflow: hidden;        
+    }
+    label {
+        background-color: $light-shade;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 12px;
+        text-align: center;
+        padding: 6px 8px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+        transition: all 0.1s ease-in-out;
+
+        &:first-of-type {
+            border-radius: 4px 0 0 4px;
+        }
+      
+        &:last-of-type {
+            border-radius: 0 4px 4px 0;
+        }
+
+    }
+    input:checked + label[for="create-incomplete"] {
+        background-color: $incomplete-color;
+        box-shadow: none;
+    }
+    input:checked + label[for="create-ongoing"] {
+        background-color: $ongoing-color;
+        box-shadow: none;
+    } 
+      input:checked + label[for="create-complete"] {
+        background-color: $complete-color;
+        box-shadow: none;
+    }
+}
+
+.submit-button {
+    height: calc(100%);
+    color: $dark-accent;
+    padding: 4px 8px;
+}

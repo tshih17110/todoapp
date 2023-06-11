@@ -13,9 +13,10 @@
     <packaging>pom</packaging> 
     <name>todoapp</name> 
     <description>Todo Application</description> 
-        <modules> 
+        <modules>
+            <module>frontend</module>  
             <module>backend</module> 
-            <module>frontend</module> 
+            
         </modules> 
 
     <dependencies> 
@@ -30,30 +31,6 @@
             <version>2.4.3</version> 
         </dependency> 
     </dependencies> 
-        
-    <!--<build> 
-        <plugins> 
-            <plugin> 
-                <groupId>org.springframework.boot</groupId> 
-                <artifactId>spring-boot-maven-plugin</artifactId> 
-                <version>3.0.6</version>
-                <executions> 
-                    <execution> 
-                        <id>repackage</id> 
-                        <goals> 
-                            <goal>repackage</goal> 
-                        </goals> 
-                    </execution> 
-                </executions> 
-                <configuration>
-                    <mainClass>com.application.todoapp</mainClass> 
-                    <finalName>Todoapp-${project.version}</finalName> 
-                    <skip>false</skip> 
-                </configuration> 
-            </plugin> 
-        </plugins> 
-    </build>
-    -->
        
 	<repositories>
 		<repository>

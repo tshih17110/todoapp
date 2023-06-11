@@ -7,9 +7,28 @@ h1 {
     font-weight: 700;
 }
 
-.label {
+h2 {
     font-family: $montserrat;
-    font-weight: 100;
+}
+
+h3 {
+    font-family:$montserrat;
+}
+
+label {
+    font-family: $montserrat;
+}
+
+select {
+    font-family: $montserrat;
+}
+
+button {
+    font-family: $montserrat;
+}
+
+input[type=text] {
+    font-family: $montserrat;
 }
 
 .add-button {

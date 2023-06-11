@@ -2,7 +2,7 @@
     display: flex;
     margin-bottom: 36px;
     overflow: hidden;
-    font-family: Montserrat;
+    font-family: $montserrat;
 }
 
 .sort-by-progress input {
@@ -27,15 +27,26 @@
     transition: all 0.1s ease-in-out;
 }
 
-.sort-by-progress input:checked + label {
-    background-color: #a5dc86;
+.sort-by-progress input:checked + label[for="sort-incomplete"] {
+    background-color: $incomplete-color;
     box-shadow: none;
 }
+
+.sort-by-progress input:checked + label[for="sort-ongoing"] {
+    background-color: $ongoing-color;
+    box-shadow: none;
+}
+
+.sort-by-progress input:checked + label[for="sort-complete"] {
+    background-color: $complete-color;
+    box-shadow: none;
+}
+
 
 .sort-by-progress label:first-of-type {
     border-radius: 4px 0 0 4px;
 }
   
-  .sort-by-progress label:last-of-type {
+.sort-by-progress label:last-of-type {
     border-radius: 0 4px 4px 0;
 }

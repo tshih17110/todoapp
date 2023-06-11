@@ -1,0 +1,34 @@
+<h1>Todoapp</h1>
+
+<div class="task-container">
+    <div class="tasklist">
+        <ul>
+            <li class="task" *ngFor="let task of tasks">
+                <div class="task-item">
+                    <span class="progress" (click)="changeProgress(task)" [ngClass]="getProgressColor(task.progress)"></span>
+                    <span class="task-name">{{ task.task }}</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="create-task-section">
+    <form class="create-form" (ngSubmit)="createTask(newTask)">
+        <div class="task-description">
+            <label>
+                <input type="text" [(ngModel)]="newTask.task" name="task" placeholder="Add task" maxlength="50" required>
+            </label>    
+        </div>
+        <div class="create-task-progress"> 
+            <input type="radio" id="create-incomplete" name="create-progress-toggle" [(ngModel)]="newTask.progress" [value]="Progress.INCOMPLETE" />
+            <label for="create-incomplete">INCOMPLETE</label>
+            <input type="radio" id="create-ongoing" name="create-progress-toggle" [(ngModel)]="newTask.progress" [value]="Progress.ONGOING" />
+            <label for="create-ongoing">ONGOING</label>
+            <input type="radio" id="create-complete" name="create-progress-toggle" [(ngModel)]="newTask.progress" [value]="Progress.COMPLETE" />
+            <label for="create-complete">COMPLETE</label>      
+        </div>
+
+        <button class="submit-button" type="submit">CREATE</button>
+    </form>
+</div>
