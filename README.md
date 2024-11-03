@@ -15,6 +15,15 @@ TodoApp is a demo web application manages tasks and track their progress. New ta
     mvn package
     ```
 
-3. Run application
+3. Start backend
     ```
-    java -jar backend/target/backend 
+    java -jar backend/target/backend-0.0.1-SNAPSHOT.jar
+    ```
+
+4. Start frontend
+    ```
+    cd frontend
+    npm run build
+    npm start
+    ```
+
