@@ -1,6 +1,6 @@
 # TodoApp
 
-TodoApp is a simple web application that allows you to manage your tasks and track their progress. You can add new tasks, update their progress, and view the list of tasks.
+TodoApp is a demo web application manages tasks and track their progress. New tasks can be added, their progress updated, and the list of tasks viewed.
 
 ### Installation
 
@@ -17,4 +17,4 @@ TodoApp is a simple web application that allows you to manage your tasks and tra
 
 3. Run application
     ```
-    java -jar backend/target/backend.
+    java -jar backend/target/backend 
